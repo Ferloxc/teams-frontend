@@ -1,0 +1,20 @@
+.Contenido{
+    color: white;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+.chatImg{
+    margin: 5%;
+}
+
+.InfoChat{
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+

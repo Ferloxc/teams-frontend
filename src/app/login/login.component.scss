@@ -1,0 +1,40 @@
+.login-form {
+    position: absolute;
+    width: 100vw;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginImg{
+    height: 20vh;
+}
+
+#user, #password{
+    background-color: #2b2b2d;
+    border-radius: 50px;
+    border-color: #636263;
+    border-style: double;
+    color: white;
+    height: 3vh;
+    width: 25vh;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+
+
+#button{
+    border: solid;
+    background: #5b5fc0;
+    border-color: #5b5fc0;
+    color: white;
+    border-radius: 100px;
+    width: 27vh;
+    height: 6vh;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+

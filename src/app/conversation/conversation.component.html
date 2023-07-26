@@ -1,0 +1,20 @@
+<div class="topbar">
+    <a href={{back}}>
+        <div><fa-icon [icon]="atras"></fa-icon></div>
+    </a>
+    <div>Foto</div>
+    <div>Nombre del receptor</div>
+<!--     <div>{{receptorInfo.nombre}}</div> -->
+ <!--    <div>{{receptorInfo.status}}</div> -->
+</div>
+
+<app-mensaje *ngFor="let m of info" [mInfo]="m" ></app-mensaje>
+
+<div class="mensaje">
+    <div>
+        <input class="newMensaje" type="text" placeholder="Type a message">
+    </div>
+    <div>
+        <fa-icon [icon]="enviar" class="icn"></fa-icon>
+    </div>
+</div>

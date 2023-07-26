@@ -1,0 +1,16 @@
+<a class="Contenido" [routerLink]="'conversaciones/' + infoChats.idConversacion">
+   
+    <div class="chatImg">
+        <img src={{infoChats.imagenDestinatario}} id="loginImg">
+    </div>
+    <div class="InfoChat">
+        <div>{{infoChats.nombreDestinatario}}</div>
+        <div>{{infoChats.ultimoMensaje}}</div>
+    </div>
+    
+    <div class="Hora">
+        {{infoChats.horaUltimoMensaje}}
+    </div> 
+
+    
+</a>

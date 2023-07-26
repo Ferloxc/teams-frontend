@@ -1,0 +1,13 @@
+<div class="UserInfo">
+    <div class="contenido">
+        <a href=""><img src={{userInfo?.imagen}} id="loginImg"></a>
+    </div>
+    <div>{{userInfo?.nombre}}</div>
+   
+</div>
+<div class="SearchBar">
+    Search
+</div>
+
+<app-individual-chat *ngFor="let c of userInfo?.conversaciones" [infoChats]="c"></app-individual-chat>
+<app-footer></app-footer>
