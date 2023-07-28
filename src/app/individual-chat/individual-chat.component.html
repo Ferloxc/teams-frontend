@@ -1,7 +1,10 @@
 <a class="Contenido" [routerLink]="'conversaciones/' + infoChats.idConversacion">
    
     <div class="chatImg">
-        <img src={{infoChats.imagenDestinatario}} id="loginImg">
+        <div class="personalImg">
+            <h1>{{userNameImg}}</h1>
+            <fa-icon *ngIf="isAGropy==true" [icon]="Teams"></fa-icon>
+        </div>
     </div>
     <div class="InfoChat">
         <div>{{infoChats.nombreDestinatario}}</div>
@@ -10,7 +13,7 @@
     
     <div class="Hora">
         {{infoChats.horaUltimoMensaje}}
-    </div> 
+    </div>     
 
-    
+
 </a>
