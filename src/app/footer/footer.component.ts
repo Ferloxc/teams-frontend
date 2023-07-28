@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { faPhone, faCommentDots, faUserGroup, faEllipsis} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -12,11 +13,21 @@ export class FooterComponent {
   Teams = faUserGroup;
   More = faEllipsis;
 
+  id:any;
+
   opcionMenu: string = "Chats";
+
+  constructor(private route: ActivatedRoute) {}
+
+
+  ngOnInit(): void {
+    this.id = this.route.snapshot.paramMap.get('id');
+  }
 
 
   seleccionarOpcionMenu(opcion: string) {
     this.opcionMenu = opcion;
+
   }
 
 }

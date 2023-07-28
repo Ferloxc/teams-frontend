@@ -1,17 +1,21 @@
 <a class="Contenedor">
     <div class="footer">
-        <div (click)="seleccionarOpcionMenu('Chats')" class="opcion" [ngClass]="{'active': opcionMenu=='Chats'}">
-            <fa-icon [icon]="Chats"></fa-icon>
-            Chat
-        </div>
+        <a href="chats/{{id}}">
+            <div (click)="seleccionarOpcionMenu('Chats')" class="opcion" [ngClass]="{'active': opcionMenu=='Chats'}">
+                <fa-icon [icon]="Chats"></fa-icon>
+                Chat
+            </div>
+        </a>
         <div (click)="seleccionarOpcionMenu('Teams')" class="opcion" [ngClass]="{'active': opcionMenu=='Teams'}">
             <fa-icon [icon]="Teams"></fa-icon>
             Teams
         </div>
-        <div (click)="seleccionarOpcionMenu('Calls')" class="opcion" [ngClass]="{'active': opcionMenu=='Calls'}">
-            <fa-icon [icon]="Calls"></fa-icon>
-            Calls
-        </div>
+        <a href="calls/1">
+            <div (click)="seleccionarOpcionMenu('Calls')" class="opcion" [ngClass]="{'active': opcionMenu=='Calls'}">
+                <fa-icon [icon]="Calls"></fa-icon>
+                Calls
+            </div>
+        </a>
         <div (click)="seleccionarOpcionMenu('More')" class="opcion" [ngClass]="{'active': opcionMenu=='More'}">
             <fa-icon [icon]="More"></fa-icon>
             More

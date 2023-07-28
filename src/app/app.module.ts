@@ -11,6 +11,7 @@ import { IndividualChatComponent } from './individual-chat/individual-chat.compo
 import { FormsModule } from '@angular/forms';
 import { ConversationComponent } from './conversation/conversation.component';
 import { MensajeComponent } from './mensaje/mensaje.component';
+import { CallsComponent } from './calls/calls.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MensajeComponent } from './mensaje/mensaje.component';
     IndividualChatComponent,
     ConversationComponent,
     MensajeComponent,
+    CallsComponent,
   ],
   imports: [
     BrowserModule,
