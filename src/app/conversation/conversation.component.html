@@ -2,10 +2,13 @@
     <a href={{back}}>
         <div><fa-icon [icon]="atras"></fa-icon></div>
     </a>
-    <div>Foto</div>
-    <div>Nombre del receptor</div>
-<!--     <div>{{receptorInfo.nombre}}</div> -->
- <!--    <div>{{receptorInfo.status}}</div> -->
+    <div class="chatImg">
+        <div class="personalImg">
+            <h3 *ngIf="imgON == false">{{userNameImg}}</h3>
+            <img *ngIf="imgON == true" src="{{userNameImg}}" class="img">
+        </div>
+    </div>
+    <div>{{receptorInfo?.nombre}}</div>
 </div>
 
 <app-mensaje *ngFor="let m of info" [mInfo]="m" ></app-mensaje>

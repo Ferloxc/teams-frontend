@@ -19,7 +19,6 @@ export class IndividualChatComponent {
 
     if (this.infoChats.imagenDestinatario == null || this.infoChats.imagenDestinatario == ""){
       if(typeof this.infoChats.idGrupo == "number"){
-        console.log("Es un grupo")
         this.isAGropy = true;
       }else{
         this.userNameImg = this.infoChats.nombreDestinatario[0];
