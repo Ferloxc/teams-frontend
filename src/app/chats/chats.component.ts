@@ -34,7 +34,7 @@ export class ChatsComponent {
     let j = await respuesta.json()
     this.userInfo = j
     
-
-
   }
+
+  
 }
